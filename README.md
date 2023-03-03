@@ -47,6 +47,7 @@ To complete the add method, you would need to check whether the linked list is e
 
 Here's an implementation of the add method:
 
+```
 add(number) {
   const new_node = new Node(number);
   if (!this.head) {
@@ -61,11 +62,12 @@ add(number) {
     this.tail = new_node;
   }
 }
-
+```
 To implement the get method, you would also need to traverse the linked list. You would start at the head node and move index nodes forward by following the next_node reference until you reach the node at the given index. Then you would return the value property of that node. If the index is out of bounds (i.e., less than 0 or greater than or equal to the length of the linked list), you should return null.
 
 Here's an implementation of the get method:
 
+```
 get(index) {
   if (index < 0) {
     return null;
@@ -77,6 +79,7 @@ get(index) {
   return current_node ? current_node.value : null;
 }
 
+```
 With these methods implemented, the LinkedList class should now be functional.
 
 ### Troubleshooting
